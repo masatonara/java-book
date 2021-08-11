@@ -1,20 +1,19 @@
 public class Main5 {
+  //1つ目のaddメソッド
+  public static int add(int x, int y) {
+    return x + y;
+  }
+  //2つ目のaddメソッド
+  public static double add(double x, double y){
+    return x + y;
+  }
+  //3つ目のaddメソッド
+  public static String add(String x, String y){
+    return x + y;
+  }
   public static void main(String[] args) {
-    System.out.println("メソッドを呼び出します");
-    hello("湊");
-    hello("朝香");
-    hello("菅原");
-    add(100, 20);
-    add(200, 50);
-    System.out.println("メソッドの呼び出しを終了します");
-  }
-  public static void hello(String name) {
-    System.out.println(name + "さん、こんにちは");
-  }
-  public static void add(int x, int y) {
-    int ans = x + y;
-    System.out.println(x + "+" + y + "=" + ans);
-
-    
+    System.out.println(add(10,20));
+    System.out.println(add(3.5, 2.7));
+    System.out.println(add("Hello", "World"));
   }
 }
